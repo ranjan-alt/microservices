@@ -8,6 +8,11 @@ const PostList = () => {
     setPosts(res.data);
   };
 
+  // const fetchPost = async () => {
+  //   const res = await axios.get("https://ranjan-alt-silver-acorn-46vj6w45rgwfqxr5-4000.preview.app.github.dev/posts");
+  //   setPosts(res.data);
+  // };
+
   useEffect(() => {
     fetchPost();
   }, []);
@@ -31,7 +36,7 @@ const PostList = () => {
     <>
       <h1>List of Post</h1>
       <div className="d-flex flex-wrap justify-content-between">
-      {renderedPosts}
+        {renderedPosts}
       </div>
     </>
   );

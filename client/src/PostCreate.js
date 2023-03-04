@@ -6,17 +6,20 @@ const PostCreate = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
 
-//     await axios.post("http://localhost:4000/posts", {
-//       title,
-//     });
-//     setTitle("");
-//   };
+      await axios.post("http://localhost:4000/posts", {
+        title,
+      });
+      setTitle("");
+    };
 
-await axios.post("https://ranjan-alt-silver-acorn-46vj6w45rgwfqxr5-4000.preview.app.github.dev/posts", {
-          title,
-        });
-        setTitle("");
-      };
+  //   await axios.post(
+  //     "https://ranjan-alt-silver-acorn-46vj6w45rgwfqxr5-4000.preview.app.github.dev/posts",
+  //     {
+  //       title,
+  //     }
+  //   );
+  //   setTitle("");
+  // };
 
   return (
     <>
